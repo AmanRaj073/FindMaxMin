@@ -1,4 +1,4 @@
-// alert("Hello");
+
 
 let conform = confirm("Would You Like To Find Minimum or Maximum ");
 if (conform) {
@@ -25,7 +25,7 @@ if (conform) {
     choice = "Minimum"
     
   } else {
-    choice ="Check Spelling"
+    choice ="Spelling"
   }
 
  //Reduce Method - Find Max or Min
@@ -46,7 +46,7 @@ if (conform) {
   <h2>Your Input : ${data}</h2>
   <h3>You Have Selected To Find "<b>${choice}</b>" Number</h3>
   <h3>${choice} No. :${final}</h3> `;
-  } else {
+  } else if (choice == "Maximum") {
     let max = (prev, curre) => {
       if (prev > curre) {
         return prev;
@@ -61,15 +61,13 @@ if (conform) {
   <h2>Your Input : ${data}</h2>
   <h3>You Have Selected To Find "<b>${choice}</b>" Number</h3>
   <h4>${choice} No : ${final}</h4> `;
+  } else {
+    document.getElementById("MinMax").innerHTML = `
+  <h2>Your Input : ${data}</h2>
+  <h3>You Have Entered Wrong "<b>${choice}</b>"</h3>
+  <h5>📑Input Accepted :- Min,min,Minimum,minimum,
+  max,Max,Maximum,maximum</h5>  `;
   }
-  console.log(data);
-  console.log(choice);
-  // console.log(final);
-
-  // document.getElementById("MinMax").innerHTML = `
-  // <h2>Your Input : ${data}</h2>
-  // <h3>You Have Selected To Find <b>${choice}</b> Number</h3>
-  // <h3>${choice} No. :${final}</h3> `;
   
 } else {
    document.getElementById("MinMax").innerHTML = `<h1>Have a Nice Day  😃</h1>`;
