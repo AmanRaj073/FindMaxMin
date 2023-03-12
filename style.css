@@ -45,6 +45,10 @@ color: rgb(255, 255, 255);
 /* text-shadow: 12px 1px 18px rgb(250, 250, 250); */
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+h5{
+  color:yellow;
+  font-family:monospace;
+}
 
 #MinMax {
     text-align: center;
