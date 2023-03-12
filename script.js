@@ -18,7 +18,7 @@ if (conform) {
   let entry4 = prompt("What Should I Find Among These Number Maximum or Minimum ?")
 
   let choice = "";
-  if (entry4 == "max" || entry4 == "Maximum" || entry4 == "Max") {
+  if (entry4 == "max" || entry4 == "Maximum" || entry4 == "Max" || entry4 =="maximum") {
     choice = "Maximum";
 
   } else if (entry4 == "min" || entry4 == "Minimum" || entry4 == "Min" || entry4 == "minimum") {
